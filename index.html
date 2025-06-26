@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git学習プロジェクト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Git学習プロジェクト</h1>
+    <p>JavaScript機能のテスト:</p>
+    <div id="output"></div>
+    <button onclick="runJavaScript()">実行</button>
+    
+    <script src="main.js"></script>
+    <script>
+        function runJavaScript() {
+            const output = document.getElementById('output');
+            output.innerHTML = '<div>JavaScriptが実行されました！</div>';
+            sayHello();
+            showTime();
+        }
+    </script>
+</body>
+</html>
