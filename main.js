@@ -1,13 +1,18 @@
 ﻿function sayHello() {
     console.log("Hello, Git World!");
     console.log("今日も良い一日を！");
+    
+    // ページにも表示
+    const output = document.getElementById('output');
+    output.innerHTML += '<div>Hello, Git World!</div>';
+    output.innerHTML += '<div>今日も良い一日を！</div>';
 }
 
-// 新機能：時刻表示
 function showTime() {
-    const now = new Date();
-    console.log("現在時刻: " + now.toLocaleString());
+    const now = new Date().toLocaleString('ja-JP');
+    console.log(now);
+    
+    // ページにも表示
+    const output = document.getElementById('output');
+    output.innerHTML += '<div>現在時刻: ' + now + '</div>';
 }
-
-sayHello();
-showTime();
